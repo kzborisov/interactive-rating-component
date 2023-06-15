@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #131518;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+}
+body .card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 24px;
+  padding: 24px;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%);
+  border-radius: 15px;
+  max-width: 412px;
+}
+body #rating .star {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #252d37;
+}
+body #rating .star img {
+  margin: 13px;
+}
+body #rating .texts .texts__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+@media only screen and (min-width: 576px) {
+  body #rating .texts .texts__title {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+body #rating .texts .texts__desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #959eac;
+}
+@media only screen and (min-width: 576px) {
+  body #rating .texts .texts__desc {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+body #rating .rate-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 17px;
+  width: 100%;
+}
+body #rating .rate-btns .rate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  background: #252d37;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+@media only screen and (min-width: 576px) {
+  body #rating .rate-btns .rate-btn {
+    width: 51px;
+    height: 51px;
+  }
+}
+body #rating .rate-btns .rate-btn p {
+  color: #7c8798;
+  transition: all 0.2s ease-in-out;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.175px;
+}
+@media only screen and (min-width: 576px) {
+  body #rating .rate-btns .rate-btn p {
+    font-size: 16px;
+    letter-spacing: 0.2px;
+  }
+}
+body #rating .rate-btns .rate-btn:hover {
+  background: #fb7413;
+}
+body #rating .rate-btns .rate-btn:hover p {
+  color: #ffffff;
+}
+body #rating .rate-btns .rate-btn:active {
+  background: #7c8798;
+}
+body #rating .rate-btns .rate-btn:active p {
+  color: #ffffff;
+}
+body #rating .rate-btns .rate-btn.clicked {
+  background: #7c8798;
+}
+body #rating .rate-btns .rate-btn.clicked p {
+  color: #ffffff;
+}
+body #rating .rate-btns .rate-btn.clicked:hover {
+  background: #fb7413;
+}
+body #rating .submit-btn {
+  border-radius: 22.5px;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.86667px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #fb7413;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+body #rating .submit-btn:hover {
+  color: #fb7413;
+  background: #ffffff;
+}
+body #thank-you {
+  display: none;
+  align-items: center;
+}
+body #thank-you .selected-rating {
+  background: #262e38;
+  border-radius: 22.5px;
+  padding: 5px 12px;
+}
+body #thank-you .selected-rating h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #fb7413;
+}
+@media only screen and (min-width: 576px) {
+  body #thank-you .selected-rating h2 {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+body #thank-you .thank-you__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+@media only screen and (min-width: 576px) {
+  body #thank-you .thank-you__title {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+body #thank-you .thank-you__desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #959eac;
+}
+@media only screen and (min-width: 576px) {
+  body #thank-you .thank-you__desc {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

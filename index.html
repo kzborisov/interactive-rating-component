@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <section id="rating" class="card">
+      <div class="star">
+        <img src="./images/icon-star.svg" alt="star" />
+      </div>
+
+      <div class="texts">
+        <h1 class="texts__title">How did we do?</h1>
+        <p class="texts__desc">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+
+      <div class="rate-btns">
+        <div class="rate-btn"><p>1</p></div>
+        <div class="rate-btn"><p>2</p></div>
+        <div class="rate-btn"><p>3</p></div>
+        <div class="rate-btn"><p>4</p></div>
+        <div class="rate-btn clicked"><p>5</p></div>
+      </div>
+
+      <button class="submit-btn">Submit</button>
+    </section>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <section id="thank-you" class="card">
+      <div class="card__img">
+        <img src="./images/illustration-thank-you.svg" alt="thank you img" />
+      </div>
+
+      <div class="selected-rating">
+        <h2>You selected <span class="user-choice">4</span> out of 5</h2>
+      </div>
+
+      <h2 class="thank-you__title">Thank you!</h2>
+      <p class="thank-you__desc">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch
+      </p>
+    </section>
+
+    <!-- Thank you state end -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
